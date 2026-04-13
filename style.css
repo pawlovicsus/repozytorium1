@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+nav { background-color: #333; padding: 15px; }
+main { padding: 20px; min-height: 80vh; }
+footer { background-color: #f1f1f1; text-align: center; padding: 10px; }
+.project, .post { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;}
