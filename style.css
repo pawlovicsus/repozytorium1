@@ -1,5 +1,82 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-nav { background-color: #333; padding: 15px; }
-main { padding: 20px; min-height: 80vh; }
-footer { background-color: #f1f1f1; text-align: center; padding: 10px; }
-.project, .post { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+/* Import nowoczesnej czcionki z Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    flex: 1;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #3498db; /* Ozdobna linia pod tytułem */
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+.project, .post {
+    background-color: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover, .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 15px
